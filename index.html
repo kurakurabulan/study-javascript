@@ -12,22 +12,56 @@
     <div id="datanya"></div>
     
     <script>
-      for (var i = 0; i < 5; i++) {
-        console.log("For: Saya bernilai " + i);
-      }
+      // for (var i = 0; i < 5; i++) {
+      //   console.log("For: Saya bernilai " + i);
+      // }
 
-      var j = 0;
-      while (j < 5) {
-        console.log("While: Saya bernilai " + j);
-        j++;
-      }     
+      // var j = 0;
+      // while (j < 5) {
+      //   console.log("While: Saya bernilai " + j);
+      //   j++;
+      // }     
 
-      var k = 0;
-      do {
-        console.log("Do While: Saya bernilai " + k);
-        k++;
+      // var k = 0;
+      // do {
+      //   console.log("Do While: Saya bernilai " + k);
+      //   k++;
+      // }
+      // while (k < 5) 
+
+      var lampu = "kuning";
+
+      switch (lampu) {
+        case "merah":
+          console.log("Lampu menyala berwarna merah");
+          document.getElementById("datanya").innerHTML = "Lampu menyala berwarna merah";
+          break;
+        
+        case "kuning":
+          console.log("Lampu menyala berwarna kuning");
+          document.getElementById("datanya").innerHTML = "Lampu menyala berwarna kuning";
+          break;
+
+        case "hijau":
+          console.log("Lampu menyala berwarna hijau");
+          document.getElementById("datanya").innerHTML = "Lampu menyala berwarna hijau";
+          break;
+        
+        default:
+          console.log("Tidak ada warna lampu tersebut");
+          break;
       }
-      while (k < 5) 
+        
+
+      if (lampu == "merah") {
+        console.log("Lampu menyala berwarna merah");
+      } else if (lampu == "kuning") {
+        console.log("Lampu menyala berwarna kuning");
+      } else if (lampu == "hijau") {
+        console.log("Lampu menyala berwarna hijau");
+      } else {
+        console.log("Tidak ada warna lampu tersebut");
+      }
     </script>
   </body>
 </html>
